@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors :{
+          transparent: 'transparent',
+          'yellowmy':{
+            100:'#f6d400',
+            200:'#f4cc07',
+            300:'#d97706',
+          },
+          
+          'bulemy':{
+           100: '#2f5cbb',
+           200:'#1e3a8a',
+          },
+          'black':'#000',
+          'white':'#fff',
+          
+        },
+            }
+          }
+        }
+      </script>
+</head>
+<body class="bg-yellowmy-100 text-bulemy-100">
+  <div class="">
+  <nav class="relative container mx-auto p-6 ">
+  
+  <!-- header start -->
+  <div class="flex items-center justify-between ">
+    <div class="logo font-bold">Logo</div>
+    
+      <ul class="hidden space-x-6 md:flex font-bold">
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li> <a href="#">About</a></li>
+        <li> <a href="#">Blog</a></li>
+      </ul>
+      
+    
+      <a href="#" class="hidden p-3 bg-bulemy-100 text-yellowmy-100
+      font-bold rounded-lg hover:bg-bulemy-200 md:block">Sign Up</a>
+   
+    <!-- Hamburger Icon -->
+    <button
+    id="menu-btn"
+    class="block hamburger md:hidden focus:outline-none "
+  >
+    <span class="hamburger-top"></span>
+    <span class="hamburger-middle"></span>
+    <span class="hamburger-bottom"></span>
+  </button>
+  </div>
+  
+    <!-- Mobile Menu -->
+
+    <div class="md:hidden ">
+      
+      
+      <div id="menu" class="absolute  flex-col hidden items-center  space-y-10 self-end  py-8 font-bold
+      bg-white sm:w-auto sm:self-center left-6 right-6
+      drop-shadow-md">
+        <a href="#">Products</a>
+        <a href="#">Pricing</a>
+        <a href="#">About Us</a>
+        <a href="#">Blog</a>
+        <!-- <a href="#">Community</a> -->
+    </div>
+    </div>
+
+  </nav>
+
+  <!-- end header -->
+
+   <!-- Hero Section -->
+   <section class="home mx-auto">
+    <div class="md:flex items-center justify-center m-6 gap-5">
+  
+    <img  class="md:w-1/2"  src="./images/Hero.png" alt="">
+    
+    
+    
+      <div class="flex flex-col gap-2">
+        <p class="">GATSBY + CONTENTFUL</p>
+        <h1 class="text-4xl font-bold">Gatsby Contentful Homepage Starter</h1>
+        <p class="">Clone, deploy, edit, and customize this starter to build your own homepage
+    </p>
+    <div class="flex flex-row items-center mt-4 gap-6">
+    <button class="bg-bulemy-100 p-2 rounded-lg text-yellowmy-100
+    font-bold hover:bg-bulemy-200">Deploy Now</button>
+    <a class="font-bold" href="#">GitHub</a>
+    </div>
+      </div>
+    </div>
+    
+    </section>
+
+<!-- 3 -->
+
+
+<section class="flex flex-col items-center justify-center text-center gap-5 mx-auto 
+my-13 md:m-28 md:p-8">
+  <p class="p-4">Join other industry-leading organizations pushing boundaries with Gatsby</p>
+<ul class="grid grid-cols-2 md:grid-cols-5 gap-3 justify-between">
+  <li>
+<img class="w-32" src="./images/Property_1_Chattr.png" alt="">
+  </li>
+  <li>
+    <img class="w-32" src="./images/Property_1_Chattr.png" alt="">
+      </li>
+      <li>
+        <img class="w-32" src="./images/Property_1_Chattr.png" alt="">
+          </li>
+          <li>
+            <img class="w-32" src="./images/Property_1_Chattr.png" alt="">
+              </li>
+
+  <li>
+    <img class="w-32" src="./images/Property_1_Chattr.png" alt="">
+      </li>
+</ul>
+
+</section>
+
+<!-- 4 -->
+
+<!--  -->
+
+<section class="flex flex-col items-center justify-center text-center gap-5  
+my-12 p-4">
+  <div class="">PRODUCT LIST</div>
+  <h1 class="text-4xl">The all-in-one solution</h1>
+  
+  <div class="flex flex-col md:flex-row
+  justify-between md:justify-center items-center m-7 md:m-4 gap-5 text-center">
+
+    <div class="flex flex-col justify-center items-center gap-2  p-4" >
+    <img class="w-14" src="./images/Product_SuperApp__Inverted_false__Size_Large.png" alt="">
+    <h1 class="text-3xl">SuperApp</h1>
+    <p class="text-center">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+       incididunt ut labore et dolore magna aliqua
+    </p>
+    <a class="underline font-bold" href="">Learn more</a>
+  </div>
+  
+  <div class="flex flex-col justify-center items-center gap-2" >
+  
+    <img class="w-14"  src="./images/Product_AcmeTrack__Inverted_false__Size_Large.png" alt="">
+    <h1 class="text-3xl">SuperApp</h1>
+    <p class="text-center">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+       incididunt ut labore et dolore magna aliqua
+    </p>
+    <a class="underline font-bold" href="">Learn more</a>
+  </div>
+  
+  <div class="flex flex-col justify-center items-center gap-2" >
+  
+    <img class="w-14"  src="./images/Product_HyperMarket__Inverted_false__Size_Large.png" alt="">
+    <h1 class="text-3xl">SuperApp</h1>
+    <p class="text-center">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+       incididunt ut labore et dolore magna aliqua
+    </p>
+    <a class="underline font-bold" href="">Learn more</a>
+  </div> 
+  
+    </div>
+  
+  </section>
+
+
+  
+
+<!-- 5 -->
+<section class="flex flex-col items-center justify-between  p-8 mx-auto
+ bg-yellowmy-200 rounded-3xl lg:m-14 ">
+  <div class="">FEATURE LIST</div>
+  <h1 class="text-3xl m-3 font-bold">Batteries included</h1>
+  <p>Lorem ipsum dolor sit amet</p>
+  
+  
+  <div class="flex flex-col md:flex-row items-center justify-center
+  p-6 mt-6 mb-3 gap-5">
+    
+  <img  class="w-72 md:w-1/2"  src="./images/Developer.png" alt="">
+  
+  
+    <div class="flex flex-col gap-3">
+      <p class="">FEATURE</p>
+      <h1 class="text-3xl font-bold">Modular</h1>
+      <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </p>
+  <div class="flex flex-row items-center gap-8 mt-4">
+  <button class="bg-bulemy-100 p-2 rounded-lg text-yellowmy-100
+  font-bold hover:bg-bulemy-200">Learn more</button>
+  </div>
+    </div>
+  </div>
+  <!--  -->
+  
+  <div class="flex flex-col md:flex-row items-center justify-center
+  p-6 mt-6 mb-11 gap-5">
+    
+  
+   
+   <div class="flex flex-col gap-3">
+    <p class="">FEATURE</p>
+    <h1 class="text-3xl font-bold">Extensible</h1>
+    <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </p>
+  <div class="flex flex-row items-center gap-8 mt-4">
+    <button class="bg-bulemy-100 p-2 rounded-lg text-yellowmy-100
+    font-bold hover:bg-bulemy-200">Learn more</button>
+    </div>
+  </div>
+  <img  class="w-72 md:w-1/2"  src="./images/VR_XP_x2.png" alt="">
+
+  </div>
+  
+  </section>
+
+<!-- 6 -->
+
+
+<section class="flex flex-col justify-between items-center  
+ my-14 p-8 ">
+  <h1 class="text-3xl mb-4 font-bold text-center md:text-4xl">Get started in minutes and make it your own</h1>
+  
+  <p class="">Everything you need to start creating a homepage today
+  </p>
+  
+  <div class="flex flex-col  md:flex-row justify-around items-center  gap-8
+  text-left my-3">
+  
+  <div class="flex flex-col justify-center items-start gap-3 my-4" >
+
+    <img class="w-5" src="./images/Property_1_activity.png" alt="">
+    <h1 class="text-2xl font-bold">Never pay for a homepage again
+    </h1>
+    <p class="">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+       incididunt ut labore et dolore magna aliqua
+    </p>
+  </div>
+  
+  <div class="flex flex-col justify-center items-start gap-2 my-6">
+  
+    <img class="w-5"  src="./images/Property_1_zap.png" alt="">
+    <h1 class="text-2xl font-bold">Automate everything</h1>
+    <p class="">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+       incididunt ut labore et dolore magna aliqua
+    </p>
+  </div>
+  
+  <div class="flex flex-col justify-center items-start gap-2 my-6">
+  
+    <img class="w-5"  src="./images/Property_1_heart.png" alt="">
+    <h1 class="text-2xl font-bold">Zero downtime</h1>
+    <p class="">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+       incididunt ut labore et dolore magna aliqua
+    </p>
+  </div>
+  
+    </div>
+    <!-- 5-1 -->
+  
+    <div class="flex flex-col md:flex-row justify-around items-center  gap-8
+    text-left my-3">
+  
+  <div class="flex flex-col justify-center items-start gap-2 my-6" >
+    <img class="w-5" src="./images/Property_1_film.png" alt="">
+    <h1 class="text-2xl font-bold">Automate everything
+    </h1>
+    <p class="">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+       incididunt ut labore et dolore magna aliqua
+    </p>
+  </div>
+  
+  <div class="flex flex-col justify-center items-start gap-2 my-6">
+  
+    <img class="w-5"  src="./images/Property_1_cloud-lightning.png" alt="">
+    <h1 class="text-2xl font-bold">Stay in the loop
+    </h1>
+    <p class="">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+       incididunt ut labore et dolore magna aliqua
+    </p>
+  </div>
+  
+  <div class=" flex flex-col justify-center items-start gap-2 my-6">
+  
+    <img class="w-5"  src="./images/Property_1_umbrella.png" alt="">
+    <h1 class="text-2xl font-bold">Stay dry
+    </h1>
+    <p class="">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+       incididunt ut labore et dolore magna aliqua
+    </p>
+  </div>
+  
+    </div>
+  </section>
+
+
+  <!-- 7 -->
+
+<section class="flex  flex-col justify-between md:flex-row md:justify-center 
+ p-8 rounded-2xl  bg-bulemy-100  text-yellowmy-100 lg:m-14">
+
+
+  <div class="flex flex-col gap-3 p-6 ">
+    <img class="w-5" src="./images/Product_SuperApp__Inverted_true__Size_Large.png" alt="">
+  <div>STAT LIST</div>
+  <h1 class="text-3xl font-bold">Finish your feature sprints blazingly fast</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  
+  
+  
+  <div class="grid grid-cols-2 gap-2 
+  items-center justify-center text-center">
+  
+  <div class="flex flex-col">
+    <h1 class="text-5xl ">100%</h1>
+    <p>Satisfaction</p>
+  </div>
+  <div class="flex flex-col">
+    <h1 class="text-5xl ">100%</h1>
+    <p>users</p>
+  </div>
+  <div class="flex flex-col">
+    <h1 class="text-5xl ">100%</h1>
+    <p>TB</p>
+  </div>
+  </div>
+
+  <div class="flex flex-row items-center gap-8 mt-6">
+    <button class="bg-yellowmy-100 p-2 rounded-lg text-bulemy-100
+    font-bold hover:bg-bulemy-200 hover:text-yellowmy-200">Learn more</button>
+   
+  
+  </div>
+  
+  </div>
+  <img class="md:w-96 md:h-80 md:mt-96 " src="./images/Runner.png" alt="">
+  
+  
+  
+  
+  
+  </section>
+
+
+<!-- 8 -->
+
+<section class=" flex flex-col justify-between items-center  
+my-14 p-8  ">
+
+  <div class=" ">TESTIMONIAL LIST
+  </div>
+  <h1 class="text-3xl mb-6 font-bold text-center">Used by the world's most innovative teams
+  </h1>
+  
+  
+    <div class="grid grid-cols-1 md:grid-cols-2 justify-around items-center m-7 gap-8
+    text-left">
+  
+  <div class="flex flex-row  items-start p-3 gap-3" >
+    <img class="w-10" src="./images/Property_1_Default.png" alt="">
+  
+    <p class=" ">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </div>
+  
+  <div class="flex flex-row  items-start p-3 gap-3">
+  
+    <img class=" w-10"  src="./images/Property_1_Default.png" alt="">
+    <p class="">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </div>
+  
+    
+   
+  
+  <div class="flex flex-row  items-start p-3 gap-3 " >
+    <img class="w-10 " src="./images/Property_1_Default.png" alt="">
+  
+    <p class="">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </div>
+  
+  <div class="flex flex-row  items-start p-3 gap-3">
+  
+    <img class=" w-10"  src="./images/Property_1_Default.png" alt="">
+    <p class=" ">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </div>
+
+  
+  </section>
+
+<!-- 9 -->
+
+
+
+
+<section class="flex  flex-col justify-between items-center
+p-8 rounded-2xl  bg-bulemy-100  text-yellowmy-100 mx-auto text-center lg:m-14">
+
+  <div class="flex flex-col items-center gap-5 p-8">
+  <h1 class="text-3xl font-bold">Dive in now</h1>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </p>
+  <div class="flex flex-row items-center gap-8 mt-5">
+    <button class="bg-yellowmy-100 p-2 rounded-lg text-bulemy-100
+    font-bold hover:bg-bulemy-200 hover:text-yellowmy-200">Deploy Now</button>
+    <a href="#">GitHub</a>
+    </div>
+  
+  </div>
+  
+  <img class="w-full mt-14" src="./images/Floating.png" alt="">
+  
+  </section>
+
+
+  <!-- 10 footer -->
+  <section class="flex flex-col justify-between
+    mt-4 gap-2 p-8 md:gap-8 md:my-10
+  ">
+<div class="flex flex-col md:flex-row md:justify-between">
+      <div class="my-4">
+        <p>logo</p>
+      </div>
+
+    <div class="flex flex-row items-center gap-7 my-3">
+      
+      <a href="">
+        <i class="fab fa-x-twitter  w-10" ></i>
+       </a> 
+       <a href="">
+        <i class="fab fa-linkedin  w-10" ></i>
+       </a> 
+       <a href="">
+        <i class="fab fa-github  w-10"></i>
+       </a> 
+       <a href="">
+      
+        <i class="fab fa-discord  w-10"></i>
+       </a>
+      
+    </div>
+  </div>
+
+  <div class="flex flex-col md:flex-row md:justify-between">
+    <ul class="md:flex md:flex-row md:gap-5">
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li> <a href="#">About</a></li>
+      <li> <a href="#">Blog</a></li>
+    </ul>
+  
+      <ul class="flex flex-row gap-2 ">
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+        <div>© 2022 Gatsby, Inc. All rights reserved.</div>
+        
+      </ul>
+  </div>
+    
+    </section>
+    
+
+
+  </div>
+  <script>
+    const btn = document.getElementById('menu-btn')
+const nav = document.getElementById('menu')
+
+btn.addEventListener('click', () => {
+  btn.classList.toggle('open')
+  nav.classList.toggle('flex')
+  nav.classList.toggle('hidden')
+})
+
+  </script>
+</body>
+</html>
